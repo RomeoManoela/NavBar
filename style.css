@@ -1,0 +1,116 @@
+body,
+html {
+  background-color: #eee;
+  font-size: 70%;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.container {
+  /* padding: 1rem 10%; */
+  background-color: #fff;
+  box-shadow: 0px 1px 10px 0.2px #333;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  padding: 1rem 10%;
+  /* background-color: #fff;
+  box-shadow: 0px 1px 10px 0.2px #333; */
+  position: relative;
+}
+h3::after {
+  content: " Addict";
+  color: #4af;
+}
+h3 {
+  font-size: 2rem;
+  text-shadow: 0px 3px 3px #8a8686;
+  margin: 0;
+}
+ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 1rem;
+}
+.nav {
+  width: 30%;
+  color: #333;
+}
+.nav li a {
+  color: #333;
+  margin-left: 10px;
+}
+
+ul li {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+}
+.icon ul li a {
+  margin-left: 1rem;
+  color: #4af;
+}
+ul li a:hover {
+  color: #5bf;
+}
+.nav-toggle {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  color: #4af;
+  font-size: 2rem;
+  right: 2rem;
+  transition: all 0.7s;
+}
+.nav-toggle:hover {
+  transform: rotateZ(90deg);
+  color: #333;
+}
+.nav2 {
+  margin: 0;
+  padding: 0 1rem;
+  transition: all 0.6s;
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.hid {
+  height: 13rem;
+}
+.nav2 a {
+  color: #333;
+  display: block;
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+  transition: all 0.5s;
+}
+.nav2 a:hover {
+  transform: translateX(10px);
+  color: rgb(188, 221, 243);
+  /* background-color: #4af; */
+}
+.nav2 li:hover {
+  background-color: #4af;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (min-width: 800px) {
+  .nav-toggle,
+  .nav2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .icon,
+  .nav {
+    display: none;
+  }
+  header {
+    padding: 1rem 2%;
+  }
+}
